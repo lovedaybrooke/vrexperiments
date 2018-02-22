@@ -3,12 +3,27 @@
 {% block content %}
 
 <h2>Home</h2>
-<p>Attempt 1: <a href="/local">with VR View locally</a></p>
-<p>Attempt 2: <a href="/remote">with VR View remote</a></p>
-<p>Attempt 3: <a href="/googles-image">tweak on #2, using a Google image, stored remotely</a></p>
-<p>Attempt 4: <a href="/tweak">tweak on #2, with just the .min.js file saved locally</a></p>
-<p>Attempt 5: <a href="/aws">tweak on #2, with both image and scripts saved in S3</a></p>
-<p>Attempt 6: <a href="/aws-tweak">tweak on #4, with the .min.js saved inside the vrview directory</a></p>
-<p>Attempt 7: <a href="/aws-change-filepath">tweak on #4, altering the path for the files in S3</a></p>
-<p>Attempt 8: <a href="/host-elsewhere">tweak on #2, hosting image and vrview on katmatfield.com</a></p>
+
+<p> I started off by looking at 2 diff sources of info on 'how to':</p>
+	<ol>
+		<li>
+			<a href="https://developers.google.com/vr/develop/web/vrview-web">https://developers.google.com/vr/develop/web/vrview-web</a>
+		</li>
+		<li>
+			<a href="https://codelabs.developers.google.com/codelabs/vr_view_101/#3">https://codelabs.developers.google.com/codelabs/vr_view_101/#3</a>
+		</li>
+	</ol>
+
+<p>From these, I know that a key thing is hosting the JS and the image in the same place, but for the life of me I cannot work out how to do it.</p>
+
+<ol style="list-style-type: none">
+<li>Attempt 1: <a href="/local">with VR View locally</a></li>
+<li>Attempt 2: <a href="/remote">with VR View remote</a></li>
+<li>Attempt 3: <a href="/googles-image">tweak on #2, using a Google image, stored remotely</a></li>
+<li>Attempt 4: <a href="/tweak">tweak on #2, with just the .min.js file saved locally</a></li>
+<li>Attempt 5: <a href="/aws">tweak on #2, with both image and scripts saved in S3</a></li>
+<li>Attempt 6: <a href="/aws-tweak">tweak on #4, with the .min.js saved inside the vrview directory</a></li>
+<li>Attempt 7: <a href="/aws-change-filepath">tweak on #4, altering the path for the files in S3</a></li>
+<li>Attempt 8: <a href="/host-elsewhere">tweak on #2, hosting image and vrview on katmatfield.com</a></li>
+</ol>
 {% endblock %}
