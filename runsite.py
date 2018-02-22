@@ -48,6 +48,11 @@ def aws_change_filepath():
 def host_elsewhere():
     return render_template('8-host-elsewhere.html')
 
+# attempt 9
+@app.route('/vrview-in-static')
+def vrview_in_static():
+    return render_template('9-vrview-in-static.html')
+
 
 # @app.route('/<page>')
 # def section(page=None):
