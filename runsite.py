@@ -1,7 +1,10 @@
 from flask import Flask
 from flask import render_template, redirect
+from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
+CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 
 @app.route('/')
@@ -15,6 +18,7 @@ def local():
  
 # attempt 2
 @app.route('/remote')
+@cross_origin()
 def remote():
     return render_template('2-remote.html')
 
