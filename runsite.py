@@ -11,37 +11,43 @@ def home():
 # attempt 1
 @app.route('/local')
 def local():
-    return render_template('local.html')
+    return render_template('1-local.html')
  
 # attempt 2
 @app.route('/remote')
 def remote():
-    return render_template('remote.html')
+    return render_template('2-remote.html')
 
 # attempt 3
 @app.route('/googles-image')
 def googles_image():
-    return render_template('googles-image.html')
+    return render_template('3-googles-image.html')
  
 # attempt 4
 @app.route('/tweak')
 def tweak():
-    return render_template('tweak.html')
+    return render_template('4-tweak.html')
  
 # attempt 5
 @app.route('/aws')
 def aws():
-    return render_template('aws.html')
+    return render_template('5-aws.html')
 
 # attempt 6
 @app.route('/aws-tweak')
 def aws_tweak():
-    return render_template('aws-tweak.html')
+    return render_template('6-aws-tweak.html')
 
 # attempt 7
 @app.route('/aws-change-filepath')
 def aws_change_filepath():
-    return render_template('aws-change-filepath.html')
+    return render_template('7-aws-change-filepath.html')
+
+# attempt 8
+@app.route('/host-elsewhere')
+def host_elsewhere():
+    return render_template('8-host-elsewhere.html')
+
 
 # @app.route('/<page>')
 # def section(page=None):
