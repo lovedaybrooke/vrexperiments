@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!--  -->
+	<!-- BELOW IS THE BIT THAT IS DIFFERENT FROM ATTEMPT 2 -->
+	<script src="https://s3-eu-west-1.amazonaws.com/katmatfield/vrview/vrview.min.js"></script>
+	<!--  -->
+	<!--  -->
+	<script>
+		window.addEventListener('load', onVrViewLoad);
+		function onVrViewLoad() {
+		  // Selector '#vrview' finds element with id 'vrview'.
+		  var vrView = new VRView.Player('#vrview', {
+		    image: 'https://s3-eu-west-1.amazonaws.com/katmatfield/amsterdam1.jpeg',
+		    is_stereo: true,
+		    width: 600,
+		    height: 300
+		  });
+		}
+	</script>
+</head>
+
+<body>
+	<h2>Attempt 6: tweak on #4, with .min.js file saved inside vrview directory</h2>
+	<p>All the files have public read access</p>
+	<p>See <a href="https://developers.google.com/vr/develop/web/vrview-web" target="_blank">here</a> for info</p>
+	<img src="/static/images/amsterdam1.jpeg" width="500px"></img>
+	<h3>360 view below this</h3>
+	<hr />
+	<div id='vrview'></div>
+</body>
+
+</html>

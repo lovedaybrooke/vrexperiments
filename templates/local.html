@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Attempt 1: with VRView locally</h2>
+<p>See <a href="https://codelabs.developers.google.com/codelabs/vr_view_101/#3" target="_blank">here</a> for info</p>
+<img src="/static/images/amsterdam1.jpeg" width="500px"></img>
+<h3>360 view below this</h3>
+<hr />
+<iframe
+   frameborder="0"
+   width="100%"
+   scrolling="no"
+   allowfullscreen    
+   src="/vrview/index.html?image=/static/images/amsterdam1.jpg&is_stereo=false">
+</iframe>
+{% endblock %}

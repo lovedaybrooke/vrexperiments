@@ -1,5 +1,13 @@
 {% extends "base.html" %}
 
 {% block content %}
-<p>Hello world!</p>
+
+<h2>Home</h2>
+<p>Attempt 1: <a href="/local">with VR View locally</a></p>
+<p>Attempt 2: <a href="/remote">with VR View remote</a></p>
+<p>Attempt 3: <a href="/googles-image">tweak on #2, using a Google image, stored remotely</a></p>
+<p>Attempt 4: <a href="/tweak">tweak on #2, with just the .min.js file saved locally</a></p>
+<p>Attempt 5: <a href="/aws">tweak on #2, with both image and scripts saved in S3</a></p>
+<p>Attempt 6: <a href="/aws-tweak">tweak on #4, with the .min.js saved inside the vrview directory</a></p>
+<p>Attempt 7: <a href="/aws-change-filepath">tweak on #4, altering the path for the files in S3</a></p>
 {% endblock %}
