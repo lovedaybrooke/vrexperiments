@@ -1,0 +1,3 @@
+[submodule "vrview"]
+	path = vrview
+	url = git@github.com:googlevr/vrview.git
