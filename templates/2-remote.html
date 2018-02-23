@@ -8,7 +8,7 @@
     function onVrViewLoad() {
       // Selector '#vrview' finds element with id 'vrview'.
       var vrView = new VRView.Player('#vrview', {
-        image: '/static/images/amsterdam1.jpeg',
+        image: '{{ url_for("static", filename="images/amsterdam1.jpeg", _external=True) }}',
         is_stereo: false,
         width: 600,
         height: 300
@@ -20,7 +20,7 @@
 <body>
   <h2>Attempt 2: with VRView remotely</h2>
   <p>See <a href="https://developers.google.com/vr/develop/web/vrview-web" target="_blank">here</a> for info</p>
-  <img src="/static/images/amsterdam1.jpeg" width="500px"></img>
+  <img src="{{ url_for("static", filename="images/amsterdam1.jpeg") }}" width="500px"></img>
   <h3>360 view below this</h3>
   <hr />
   <div id='vrview'></div>
